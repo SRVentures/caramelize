@@ -4,7 +4,7 @@ defmodule Caramelize.Mixfile do
   def project do
     [app: :caramelize,
      version: "0.1.2",
-     elixir: "~> 1.3",
+     elixir: "~> 1.5",
      description: description(),
      package: package(),
      build_embedded: Mix.env == :prod,
@@ -42,7 +42,7 @@ defmodule Caramelize.Mixfile do
       maintainers: ["James Rasmussen", "Jake Hasler"],
       licenses: ["Apache 2.0"],
       links: %{
-        "GitHub" => "https://github.com/SRVentures/caramelize",
+        "GitHub" => "https://github.com/podium/caramelize",
         "Docs" => "https://hexdocs.pm/caramelize/0.1.0/"
       }
     ]
