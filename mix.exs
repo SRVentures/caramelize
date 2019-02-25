@@ -4,7 +4,7 @@ defmodule Caramelize.Mixfile do
   def project do
     [
       app: :caramelize,
-      version: "1.0.0",
+      version: "1.2.0",
       elixir: "~> 1.7",
       description: description(),
       package: package(),
