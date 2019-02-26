@@ -54,7 +54,9 @@ defmodule Caramelize do
 
   # Camelize strings in a map
   def camelize(key) when is_binary(key) do
-    Recase.to_camel(key)
+    capitalized = Macro.camelize(key)
+    <<first>> <> rest = capitalized
+    String.downcase(<<first>>) <> rest
   end
 
   # if a nested map, camelize the nested map keys
